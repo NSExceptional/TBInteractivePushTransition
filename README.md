@@ -8,6 +8,27 @@ TBInteractivePushTransition enables the ability to swipe "forward" to push a vie
 
 To use it, simply create and hold a reference to the transition object in a view controller on the navigation stack. **The view controller must be on the navigation stack when the transition object is created.** Similarly, if you use the same view controller in more than one navigation controller, you must recreate the transition object each time.
 
+```objc
+@interface SomeViewController : UIViewController <TBPushTransitionDataSource>
+@property (nonatomic) TBInteractivePushTransition *transition;
+@end
+
+@implementation SomeViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+
+    // Assuming we have a .navigationController at this point
+    self.transition = [TBInteractivePushTransition viewController:self delegate:self];
+}
+
+- (UIViewController *)viewControllerForPushTransition {
+    return [[self class] new]; // whatever
+}
+
+@end
+```
+
 ## Example Project
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
