@@ -1,23 +1,27 @@
 # TBInteractivePushTransition
 
-[![CI Status](http://img.shields.io/travis/ThePantsThief/TBInteractivePushTransition.svg?style=flat)](https://travis-ci.org/ThePantsThief/TBInteractivePushTransition)
 [![Version](https://img.shields.io/cocoapods/v/TBInteractivePushTransition.svg?style=flat)](http://cocoapods.org/pods/TBInteractivePushTransition)
 [![License](https://img.shields.io/cocoapods/l/TBInteractivePushTransition.svg?style=flat)](http://cocoapods.org/pods/TBInteractivePushTransition)
 [![Platform](https://img.shields.io/cocoapods/p/TBInteractivePushTransition.svg?style=flat)](http://cocoapods.org/pods/TBInteractivePushTransition)
 
-## Example
+TBInteractivePushTransition enables the ability to swipe "forward" to push a view controller onto the navigation stack via a screen edge pan gesture, akin to `UINavigationController`'s `interactivePopGestureRecognizer`.
+
+To use it, simply create and hold a reference to the transition object in a view controller on the navigation stack. **The view controller must be on the navigation stack when the transition object is created.** Similarly, if you use the same view controller in more than one navigation controller, you must recreate the transition object each time.
+
+## Example Project
 
 To run the example project, clone the repo, and run `pod install` from the Example directory first.
 
 ## Requirements
 
+iOS 7 or later.
+
 ## Installation
 
-TBInteractivePushTransition is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+Add the following line to your Podfile:
 
 ```ruby
-pod "TBInteractivePushTransition"
+pod 'TBInteractivePushTransition'
 ```
 
 ## Author

@@ -39,6 +39,11 @@ static const CGFloat kMinimumPushDistanceThreshold = 0.5;
     return me;
 }
 
+- (void)dealloc {
+    [self.sourceViewController.view removeGestureRecognizer:self.interactivePushGestureRecognizer];
+    _interactivePushGestureRecognizer = nil;
+}
+
 - (BOOL)gestureRecognizer:(UIGestureRecognizer *)gesture shouldRecognizeSimultaneouslyWithGestureRecognizer:(UIGestureRecognizer *)other {
     // So we don't interfere with the interactive pop gesture recognizer
     return YES;
