@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'TBInteractivePushTransition_Example' do
+  pod 'TBInteractivePushTransition', :path => '../'
+
+  target 'TBInteractivePushTransition_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
