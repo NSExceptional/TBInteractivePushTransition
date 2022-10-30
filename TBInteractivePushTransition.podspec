@@ -8,12 +8,11 @@ Pod::Spec.new do |s|
 TBInteractivePushTransition is an interactive push transition triggered by a screen edge swipe from right to left.
                        DESC
 
-  s.homepage         = 'https://github.com/ThePantsThief/TBInteractivePushTransition'
+  s.homepage         = 'https://github.com/NSExceptional/TBInteractivePushTransition'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'ThePantsThief' => 'tannerbennett@me.com' }
-  s.source           = { :git => 'https://github.com/ThePantsThief/TBInteractivePushTransition.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/ThePantsThief'
+  s.author           = { 'NSExceptional' => 'tannerbennett@me.com' }
+  s.source           = { :git => 'https://github.com/NSExceptional/TBInteractivePushTransition.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '7.0'
 
